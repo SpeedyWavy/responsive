@@ -1,0 +1,253 @@
+/* Keyframes */
+@keyframes fallIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Computador */
+@media (min-width: 1025px){
+
+  main{
+    height: 100dvh;
+    width: 100%;
+  }
+
+  .imagem{
+    background: #000;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url(./assets/pessoas.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .login{
+    float: right;
+    width: 50%;
+    animation: fallIn 720ms ease-out forwards;
+
+    .logo{
+      /* background-color: #000; */
+      height: 30dvh;
+      width: 50dvh;
+      margin-left: 25%;
+      margin-top: 5%;
+      background-image: url(./assets/logo.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: 50px;
+    }
+
+    h1{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-left: 20%;
+      margin-top: 5%;
+      font-size: 25px;
+      margin-bottom: 2%;
+    }
+
+    .ui-input{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-left: 20%;
+      width: 60%;
+
+      input{
+        width: 100%;
+        height: 5dvh;
+        text-indent: 10px;
+        border-radius: 10px;
+        border: none;
+        border: solid 1px #00000082;
+      }
+      p{
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+    }
+
+    .opcoes{
+      margin-left: 20%;
+      margin-top: 5%;
+      width: 60%;
+
+      button{
+        width: 100%;
+        height: 6.5dvh;
+        border-radius: 15px;
+        border: none;
+        background-color: #1572e5;
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .esqueci{
+        text-align: center;
+        margin-left: 28%;
+        margin-top: 10%;
+        float: left;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #1572e5;
+      }
+    }
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+  main{
+    height: 100%;
+    width: 100%;
+  }
+
+  .login{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    .logo{
+      height: 30dvh;
+      width: 50dvh;
+      margin-left: 25%;
+      margin-top: 5%;
+      background-image: url(./assets/logo.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-y: 10px;
+    }
+    h1{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-left: 20%;
+      margin-top: 5%;
+      font-size: 25px;
+      margin-bottom: 2%;
+    }
+
+    .ui-input{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-left: 20%;
+      width: 60%;
+
+      input{
+        width: 100%;
+        height: 5dvh;
+        text-indent: 10px;
+        border-radius: 10px;
+        border: none;
+        border: solid 1px #00000082;
+      }
+      p{
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-weight: 600;
+        
+      }
+    }
+    .opcoes{
+      margin-left: 20%;
+      margin-top: 5%;
+      width: 60%;
+
+      button{
+        width: 100%;
+        height: 6.5dvh;
+        border-radius: 15px;
+        border: none;
+        background-color: #1572e5;
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .esqueci{
+        text-align: center;
+        margin-left: 28%;
+        margin-top: 10%;
+        float: left;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #1572e5;
+      }
+    }
+  }
+}
+
+/* Celular */
+@media (max-width: 768px){
+  main{
+    height: 100%;
+    width: 100%;
+  }
+
+  .login{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    .logo{
+      /* background-color: #000; */
+      height: 20dvh;
+      width: 80%;
+      margin-left: 13%;
+      margin-top: 5%;
+      background-image: url(./assets/logo.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-y: 35px;
+    }
+    h1{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-left: 20%;
+      margin-top: 20%;
+      font-size: 25px;
+      margin-bottom: 2%;
+    }
+
+    .ui-input{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-left: 17%;
+      width: 70%;
+
+      input{
+        width: 100%;
+        height: 5dvh;
+        text-indent: 10px;
+        border-radius: 10px;
+        border: none;
+        border: solid 1px #00000082;
+      }
+      p{
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-weight: 600;
+        
+      }
+    }
+    .opcoes{
+      margin-left: 17%;
+      margin-top: 5%;
+      width: 70%;
+
+      button{
+        width: 100%;
+        height: 6.5dvh;
+        border-radius: 15px;
+        border: none;
+        background-color: #1572e5;
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .esqueci{
+        text-align: center;
+        margin-left: 15%;
+        margin-top: 10%;
+        float: left;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #1572e5;
+      }
+    }
+  }
+}
