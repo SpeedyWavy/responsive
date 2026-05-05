@@ -1,0 +1,71 @@
+
+
+
+
+.img{
+    background-image: url(./assets/logoo.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 5vh;
+}
+
+main{
+    width: 70%;
+    height: 70vh;
+    float: left;
+    margin-left: 15%;
+    /* margin-top: 15vh; */
+    border-radius: 20px;
+    background: #ccc;
+    box-shadow: 0 0 10px #777;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 5%;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    float: left;
+    margin-left: 5%;
+    margin-top: 6vh;
+    background-color: #000;
+}
+td{
+    border: 1px solid #555;
+    padding: 3px;
+    text-align: center;
+}
+
+#deletar{
+    text-decoration: none;
+    text-transform: none;
+    color: #000;
+}
+
+tr:nth-child(even){ /* linhas alternadas */
+    background-color: #c4dee7;
+}
+
+tr:nth-child(odd){
+    background-color: #c1cbf7;
+}
+
+tr:hover{ /* Ao passar o mouse */
+    background-color: #4d527c;
+    color: #fff;
+}
+tr:first-child td{ /* Primeira Linha */
+    font-weight: 400;
+    background-color: #111c4d;
+    text-align: center;
+    color: #fff;
+    height: 10vh;
+    font-size: 20px;
+}
