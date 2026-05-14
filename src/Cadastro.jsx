@@ -1,16 +1,22 @@
-import './css/App.css'
+import './css/Cadastro.css'
 
-function App({ onGoToListagem, onGoToCadastro }) {
+function Cadastro({ onGoToLogin }) {
   return (
-    <main className="auth-main">
+    <main className="cadastro-main">
       <div className="imagem"></div>
       <div className="login">
         <div className="logo"></div>
-        <h1>Iniciar Sessao</h1>
-        <div className="ui-input">
-          <p id="sessao">Iniciar Sessao com Nome de Usuario</p>
+        <h1>Criar Cadastro</h1>
+        <div className="ui-input1">
+          <p id="sessao">Insira um Nome de Usuario</p>
           <input type="text" placeholder="Digite seu Usuario" />
+
+          <p id="Email">Insira seu Email para Criar um Cadastro.</p>
+          <input type="text" placeholder="Digite seu Email" />
+
           <p>Senha</p>
+          <input type="text" placeholder="Digite sua Senha" />
+          <p>Confirmacao Senha</p>
           <input type="text" placeholder="Digite sua Senha" />
 
           <div className="lembrar">
@@ -19,18 +25,16 @@ function App({ onGoToListagem, onGoToCadastro }) {
           </div>
 
           <div className="opcoes">
-            <button type="button" onClick={onGoToListagem}>
-              Iniciar Sessao
-            </button>
+            <button type="button">Criar Cadastro</button>
             <a
-              href="#cadastro"
+              href="#login"
               className="esqueci"
               onClick={(event) => {
                 event.preventDefault()
-                onGoToCadastro()
+                onGoToLogin()
               }}
             >
-              Não Possui um Cadastro? Ir para Cadastro
+              Ja possui um cadastro? Voltar para Login
             </a>
           </div>
         </div>
@@ -39,4 +43,4 @@ function App({ onGoToListagem, onGoToCadastro }) {
   )
 }
 
-export default App
+export default Cadastro

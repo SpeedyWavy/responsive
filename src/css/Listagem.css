@@ -1,0 +1,120 @@
+.listagem-page {
+  min-height: 100dvh;
+  padding: 3rem 1.5rem;
+  background:
+    linear-gradient(rgba(24, 26, 33, 0.52), rgba(24, 26, 33, 0.52)),
+    url(../assets/store.jpg) center/cover no-repeat;
+}
+
+.img {
+  width: min(360px, 80%);
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  background-image: url(../assets/logoo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.listagem-main {
+  width: min(1100px, 100%);
+  min-height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  float: none;
+  border-radius: 16px;
+  background: #181a21;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+.listagem-main h1 {
+  margin: 0 0 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: clamp(1.7rem, 2.4vw, 2.3rem);
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #20242d;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+td {
+  border: 1px solid #2f3643;
+  padding: 0.95rem 0.75rem;
+  text-align: center;
+  color: #d8dde7;
+}
+
+tr:nth-child(even) {
+  background-color: #1e2530;
+}
+
+tr:nth-child(odd) {
+  background-color: #252d39;
+}
+
+tr:hover {
+  background-color: #223d63;
+}
+
+tr:first-child td {
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #1572e5;
+}
+
+#voltar {
+  display: block;
+  width: min(220px, 100%);
+  height: 52px;
+  margin: 1.75rem auto 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #1572e5;
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+
+@media (max-width: 768px) {
+  .listagem-page {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .img {
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .listagem-main {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.92rem;
+  }
+
+  #voltar {
+    width: 100%;
+    max-width: none;
+  }
+}
